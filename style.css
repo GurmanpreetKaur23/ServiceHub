@@ -253,7 +253,7 @@ a:hover {
 } 
 
 /* get help  */
-.help a {
+.serve a {
   background-color: #f0f0f0;
 	border-radius: 5px;
 	padding: 10px;
@@ -273,6 +273,12 @@ a:hover {
   cursor: pointer;
   display: inline-block;
   margin-right: 10px;
+}
+.serve{
+  display: flex; /* Make the container a flex container */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  justify-content: space-between; /* Distribute items evenly with spacing */
+  align-items: center; /* Align items vertically in the center */
 }
 
 .help {
