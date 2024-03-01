@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .location{
+           background-color: #055240;
+           max-width: 100;
+           height: 80px;
+           color: white;
+           /* align-items: center; */
+           text-align: center;
+        }
+
+        .location input {
+            font-family: Yanone Kaffeesatz;
+            width: 700px;
+            text-align: center;
+            height: 20px;
+        }
+
+        .location label {
+            font-family: Fugaz One;
+        }
+
+        button {
+            border-radius: 10px;
+            border: 2px solid darkgoldenrod;
+            background-color: #FFFCE4 ;
+            margin-top: 4px;
+            cursor: pointer;
+            width: 70px;
+            height: 30px;
+        }
+
+        .tasks{
+           background-color: #055240;
+           max-width: 100;
+           height: 80px;
+           color: white;
+           /* align-items: center; */
+           text-align: center;
+        }
+
+        .tasks input {
+            font-family: Yanone Kaffeesatz;
+            width: 700px;
+            text-align: center;
+            height: 20px;
+        }
+
+        .tasks label {
+            font-family: Fugaz One;
+        }
+    </style>
+
+    <div class="location">
+        <label for="location">Your Location</label><br>
+        <input type="text" placeholder="enter your location">
+        <button>Continue</button>
+    </div>
+
+    <div class="tasks">
+        <label for="tasks">Task to be done</label>
+        <input type="text" placeholder="enter work to be done">
+        <button>Continue</button>
+    </div>
+</body>
+</html>
