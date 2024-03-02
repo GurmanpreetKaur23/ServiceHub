@@ -259,24 +259,38 @@ a:hover {
 .serve a {
   background-color: #F6E6FF;
 	border-radius: 5px;
-	padding: 10px;
-	width: max-content;
+	padding: 10px 30px;
+	/* width: max-content; */
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	transition: 0.3s;
+	transition: 0.5s;
   /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 	margin-bottom: 20px;
   /* margin-left: 40px; */
 	display: flex ;
   flex-wrap: wrap;
-  /* flex-direction: row; */
 	text-align: center;
   text-decoration: none;
   border: 2px solid black;
   color: darkblue;
   cursor: pointer;
-  display: inline-block;
-  margin-right: 10px;
 }
+
+.serve a:hover {
+  border-color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  letter-spacing: 0.25em; /* Apply letter-spacing on hover */
+}
+
+.serve a:before{
+  content: ' ';
+  position: absolute;
+  inset: 2px;
+}
+.serve a span {
+  position: relative;
+  z-index: 1;
+}
+
 .serve{
   display: flex; /* Make the container a flex container */
   flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
