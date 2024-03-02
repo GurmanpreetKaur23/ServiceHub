@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fugaz+One&family=Homemade+Apple&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Satisfy&family=Yanone+Kaffeesatz:wght@200..700&family=Zeyada&display=swap') ;
 /* login page */
+/* gurdeep */
 .form-container {
   width: 300px;
   height: auto;
@@ -71,10 +72,7 @@
 }
 
 /* services */
-body {
-	font-family: Arial, sans-serif;
-}
-
+/* guntas */
 .house-services {
 	display: flex;
 	flex-wrap: wrap;
@@ -100,6 +98,7 @@ body {
 .service-item:hover {
 	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 	transform: translateY(-5px);
+  
 }
 
 .service-item img {
@@ -120,6 +119,7 @@ body {
 }
 
 /* customer satisfaction */
+/* gunjan */
 /* body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -139,13 +139,15 @@ body {
   padding: 0px -20rem;
 }
 
-h1, h2 {
-  color: #446688;
+.container h2 {
+  color: purple;
+  /* text-decoration: underline; */
 }
 
-h1 {
+.container h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: darkviolet;
 }
 .headings {
   display: flex;
@@ -163,18 +165,19 @@ p {
 }
 
 /* Add a link style */
-a {
+/* a {
   color: #446688;
   text-decoration: none;
-}
+} */
 
 /* Add a hover effect for the link */
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 
 /* how it works */
+/* gurman */
 .working {
     /* existing styles */
     padding: 48px 40px;
@@ -197,7 +200,7 @@ a:hover {
     /* existing styles */
     width: 45%;
     padding: 32px;
-    background-color: whitesmoke;
+    background-color: lavenderblush;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* position: relative; */
@@ -208,18 +211,20 @@ a:hover {
 #how-it-works h2 {
     /* existing styles */
     font-weight: bold;
-    color: #2E7D32;
+    color: purple;
+    text-decoration:underline;
+
 }
     
 #how-it-works h3 {
     /* existing styles */
     font-weight: bold;
-    color: #2E7D32;
+    color: purple;
 }
   
 #how-it-works p {
     /* existing styles */
-    color: #666;
+    color: darkviolet;
 }
 
 #how-it-works ol { 
@@ -242,8 +247,8 @@ a:hover {
   font-size: 2em; 
   width: 2em; 
   line-height: 2em; 
-  color: #666; 
-  background-color: #ddd; 
+  color: lavenderblush; 
+  background-color: purple; 
   border-radius: 50%; 
   margin-left: -2em; 
   position: absolute; 
