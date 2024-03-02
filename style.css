@@ -463,3 +463,16 @@ html {
     flex-direction: column;
   }
 }
+
+/* connect */
+/* gurman */
+.connect {
+  background-color: lavender;
+  border-radius: 80px;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  position: relative;
+color: purple;
+font-weight: bolder;
+}
