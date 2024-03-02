@@ -401,8 +401,9 @@ p {
   }
 }
 
+/* Crafted with passion */
 .text {
-  text-align: right;
+  text-align: center;
   font-family: Homemade Apple;
   /* display: inline; */
   background-color: purple;
