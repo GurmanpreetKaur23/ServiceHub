@@ -106,49 +106,55 @@ body {
 }
 
 /* Services section */
-/* guntas */
+/* guntas , gurdeep*/
 .house-services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  background-color: #575757;
+  background-color: #FFFCE4;
+  position: relative;
 }
 
 .service-item {
-  background-color: #f0f0f0;
-  border-radius: 70px;
+  background-color: lavenderblush;
+  border-radius: 10px;
   padding: 20px;
   width: 200px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 2px solid darkmagenta;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .service-item:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .service-item img {
   width: 100%;
   height: auto;
-  border-radius: 50px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .service-item h2 {
   margin-top: 0;
   margin-bottom: 10px;
+  color: darkslateblue;
 }
 
 .service-item p {
   margin: 0;
   font-size: 0.9rem;
+  color: darkorchid;
 }
 
 /* Customer satisfaction section */
