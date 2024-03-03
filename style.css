@@ -391,7 +391,6 @@ p {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 9999; /* Ensure it's above other content */
 }
 
 #progress-value {
@@ -466,27 +465,22 @@ html {
 }
 
 /* connect */
-.connect {
-  position: relative;
+#connect {
+  position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px; /* Adjusted from "right: 20px;" to "left: 20px;" */
   height: 70px;
   width: 70px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 9999; /* Ensure it's above other content */
+  background-color: lavender;
 }
 
-.connect span {
-  display: block;
-  height: calc(100% - 15px);
-  width: calc(100% - 15px);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+#connect span {
   font-size: 35px;
   color: purple;
 }
