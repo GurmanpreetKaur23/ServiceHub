@@ -7,68 +7,6 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/* Login form */
-/* gurdeep */
-.form-container {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.423);
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.login-form label {
-  margin-bottom: 5px;
-}
-
-.login-form input[type="email"],
-.login-form input[type="password"] {
-  margin-bottom: -10px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.login-form button[type="submit"] {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: #fff;
-  cursor: pointer;
-}
-
-.login-form button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-.login-form a {
-  color: #007bff;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-
-.login-form a:hover {
-  text-decoration: underline;
-}
-
-.login-form p {
-  margin-top: 10px;
-  text-align: center;
-}
-
 /* Services section */
 /* guntas */
 .house-services {
