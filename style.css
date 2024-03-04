@@ -1,6 +1,7 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fugaz+One&family=Homemade+Apple&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Satisfy&family=Yanone+Kaffeesatz:wght@200..700&family=Zeyada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap') ;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap') ;
 /* Common styles */
 
 body {
@@ -117,7 +118,7 @@ body {
 }
 
 .service-item {
-  background-color: #ffffff;
+  background-color: #f1dcd7;
   border-radius: 10px;
   padding: 20px;
   width: 200px;
@@ -128,7 +129,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: px dotted olive;
+  border: px dotted #3c1501e3 ;
   cursor: pointer;
   position: relative;
   z-index: 2;
@@ -148,14 +149,14 @@ body {
 .service-item h2 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: olive;
+  color: #3c1501e3 ;
   font-family: Raleway;
 }
 
 .service-item p {
   margin: 0;
   font-size: 0.9rem;
-  color: darkolivegreen;
+  color: dark#3c1501e3 green;
   font-family: Manrope;
 }
 
@@ -173,14 +174,14 @@ body {
 }
 
 .container h2 {
-  color: rgb(188, 79, 17);
+  color: rgb(193, 86, 24);
   font-family: Manrope;
 }
 
 .container h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:rgb(0, 0, 0);
+  color:rgb(96, 0, 0);
   font-family: Raleway;
 }
 
@@ -200,7 +201,7 @@ p {
   padding: 48px 40px;
   position: relative;
   display: flex;
-  background-color: #fefece;
+  background-color: #666666;
 }
 
 .picture {
@@ -215,7 +216,7 @@ p {
 #how-it-works {
   width: 45%;
   padding: 32px;
-  background-color: #D7F5D3;
+  background-color: #b0aaaa;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -224,19 +225,19 @@ p {
 
 #how-it-works h2 {
   font-weight: bold;
-  color: darkgreen;
+  color: rgb(26, 24, 24);
   text-decoration: underline;
   font-family: Manrope;
 }
 
 #how-it-works h3 {
   font-weight: bold;
-  color: darkolivegreen;
+  color: #5a2303;
   font-family:Manrope;
 }
 
 #how-it-works p {
-  color: olive;
+  color: #975a05;
   font-family: Raleway;
 }
 
@@ -260,8 +261,8 @@ p {
   font-size: 2em;
   width: 2em;
   line-height: 2em;
-  color: darkseagreen;
-  background-color: darkgreen;
+  color: #d0a79e;
+  background-color: #522522 ;
   border-radius: 50%;
   margin-left: -2em;
   position: absolute;
@@ -275,7 +276,7 @@ p {
 /* Get help section */
 /* gurman */
 .serve a {
-  background-color: #F1F7ED;
+  background-color:#f1dcd7;
   border-radius: 5px;
   padding: 10px 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -285,8 +286,8 @@ p {
   flex-wrap: wrap;
   text-align: center;
   text-decoration: none;
-  border: 2px solid darkolivegreen;
-  color: rgb(1, 111, 1);
+  border: 3px solid #522522;
+  color: #4a120f;
   cursor: pointer;
 }
 
@@ -326,7 +327,7 @@ p {
 }
 
 .help h2 {
-  color: rgb(188, 79, 17);
+  color: rgb(94, 30, 20);
   font-family: Manrope;
   text-align: center;
 }
@@ -338,8 +339,8 @@ p {
   text-align: center;
   font-size: 40px;
   text-align: center;
-  background-color: #FEFBE3;
-  color: darkgreen;
+  background-color: #666666;
+  color:#e5a799 ;
 }
 
 .about img {
@@ -356,13 +357,14 @@ p {
 
 .person {
   position: relative;
-  font-size: 20px;
-  font-family: Zeyada;
+  font-size: 15px;
+  font-family: Quicksand;
 }
 
 .person img {
   height: 200px;
   transition: transform 0.3s;
+  border-radius: 30px;
 }
 
 .person:hover img {
@@ -398,7 +400,7 @@ p {
   right: -10px;
   bottom: -10px;
   z-index: -1;
-  background: #1B876C;
+  background: #3e1602e3;
   background-size: 400% 400%;
   animation: neonBorder 1.5s infinite alternate;
 }
@@ -417,8 +419,12 @@ p {
 .text {
   text-align: center;
   font-family: Homemade Apple;
-  background-color: #1B876C;
+  background-color: #ffffff;
   color: white;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+  line-height: 4em;
+  outline: none;
+  animation: animate 5s linear infinite;
 }
 
 .quar {
@@ -427,6 +433,23 @@ p {
   display: inline;
 }
 
+@keyframes animate {
+
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color: black;
+    text-shadow: none;
+  }
+
+  18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100% {
+    color: maroon;
+    text-shadow: 0 0 10px #bf0404e3 ,
+    0 0 20px #bf0404e3 ,
+    0 0 40px #bf0404e3 ,
+    0 0 80px #bf0404e3 ,
+    0 0 160px #bf0404e3 ;
+  }
+  
+}
 /* Back to top button */
 /* gurman */
 #progress {
@@ -446,12 +469,12 @@ p {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: #F1F7ED;
+  background-color: rgb(185, 164, 164);
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 35px;
-  color: darkgreen;
+  color: rgb(72, 22, 22);
 }
 
 html {
@@ -526,10 +549,9 @@ html {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  background-color: #F1F7ED;
 }
 
 #connect span {
   font-size: 35px;
-  color: darkgreen;
+  color: rgb(106, 53, 53) ;
 }
