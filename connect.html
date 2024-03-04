@@ -6,72 +6,93 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Fugaz+One&family=Pangolin&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
-        *{
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.434), rgb(0, 0, 0)), url("Screenshot.png");
+            background-repeat: no-repeat;
+            background-size: cover;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'poppins' , sans-serif;    
+            font-family: 'poppins', sans-serif;
         }
 
         .container {
             width: 100%;
             height: 100vh;
-            background: url("beige.png");
+            background: linear-gradient(rgba(0, 0, 0, 0.434), rgb(0, 0, 0)), url( "Screenshot.png");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
+            /* backdrop-filter: blur(2px); */
+            background-blend-mode: color-dodge;
         }
 
         form {
-            background: url("lav.jpg");
+            background: white;
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
             flex-direction: column;
             padding: 2vw 4vw;
             width: 90%;
-            max-width: 600px;
+            max-width: 500px;
             border-radius: 20px;
-            border: 5px solid darkgoldenrod;
+            border: 5px;
+            border-color: linear-gradient(to right, #b3700d, #281e02);
         }
 
         form h3 {
-            color: purple;
+            color: rgb(135, 84, 2);
             font-family: Fugaz One;
             font-weight: 800;
             font-size: x-large;
             margin-bottom: 20px;
         }
 
-        form input , form textarea {
-            border: 1px dotted purple;
+        form input, form textarea {
+            border: 1px solid gray;
             margin: 10px 0;
-            padding: 20px;
+            padding: 15px;
             outline: none;
-            background: #E9DCE5;
-            font-family: Annie Use Your Telescope;
+            background: #ffffff;
             font-size: 16px;
-            border-radius: 20px;
+            border: 1px solid gray;
+            border-radius: 10px;
         }
 
-        form button {
+        form input:focus, form textarea:focus {
+            color: #0095ff;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+
+        form input[type="submit"] {
             padding: 15px;
-            background: darkorchid;
+            background: linear-gradient(to right, #b3700d, #281e02);
             color: #fff;
             font-size: 18px;
             border: 0;
-            outline: none;
             cursor: pointer;
-            width: 150px;
-            margin: 20px auto 0;
             border-radius: 30px;
-            font-family: Pangolin;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
     </style>
 
@@ -79,14 +100,21 @@
         <form onsubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH WITH US</h3>
             <input type="text" id="name" placeholder="Your Name" required>
+            <i class="fa fa-user" aria-hidden="true"></i>
 
             <input type="email" id="nemail" placeholder="Email ID" required>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
 
             <input type="text" id="phone" placeholder="Phone No." required>
+            <i class="fa fa-phone" aria-hidden="true"></i>
 
-            <textarea id="message" rows="4" placeholder="How can we help you ? "></textarea>
+            <textarea id="message" rows="4" placeholder="How can we help you ? ">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </textarea>
+            
 
             <button type="submit">Send</button>
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
         </form>
     </div>
 
