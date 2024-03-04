@@ -20,7 +20,7 @@ let calcScrollValue = () => {
         document.documentElement.scrollTop = 0;
     });
 
-    scrollProgress.style.background = `conic-gradient(#F2E9FD ${ScrollValue}%, #d7d7d7 ${ScrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#522522 ${ScrollValue}%, #d7d7d7 ${ScrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
@@ -46,7 +46,7 @@ let calcConnectValue = () => {
         document.documentElement.scrollTop = 0;
     });
 
-    connectProgress.style.background = `conic-gradient(#F2E9FD ${QuestionValue}%, #d7d7d7 ${QuestionValue}%)`;
+    connectProgress.style.background = `conic-gradient(#f9aea9 ${QuestionValue}%, #d7d7d7 ${QuestionValue}%)`;
 };
 
 window.onscroll = () => {
