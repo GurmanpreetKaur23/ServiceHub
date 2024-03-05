@@ -34,8 +34,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* backdrop-filter: blur(2px); */
-            background-blend-mode: color-dodge;
         }
 
         form {
@@ -45,8 +43,8 @@
             display: flex;
             flex-direction: column;
             padding: 2vw 4vw;
-            width: 90%;
-            max-width: 500px;
+            width: 40%;
+            max-width: 320px;
             border-radius: 20px;
             border: 5px;
             border-color: linear-gradient(to right, #b3700d, #281e02);
@@ -60,19 +58,43 @@
             margin-bottom: 20px;
         }
 
-        form input, form textarea {
-            border: 1px solid gray;
-            margin: 10px 0;
-            padding: 15px;
-            outline: none;
-            background: #ffffff;
-            font-size: 16px;
-            border: 1px solid gray;
-            border-radius: 10px;
-        }
+        .form-control {
+            width: 380px;
+            position: relative;
+            margin-bottom: 24px;
+}   
 
-        form input:focus, form textarea:focus {
-            color: #0095ff;
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+
+input {
+    width: 50%;
+    background: #e6e6e6;
+    color: #333;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+}
+
+input ~ i {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color   0.4s;
+}
+
+input:focus ~ i {
+    color:#8E6F50;
+}
+
+form input:focus, form textarea:focus {
+            color: #8E6F50;
         }
 
         .input-icon {
@@ -83,7 +105,7 @@
             color: gray;
         }
 
-        form input[type="submit"] {
+        .submit {
             padding: 15px;
             background: linear-gradient(to right, #b3700d, #281e02);
             color: #fff;
@@ -93,30 +115,44 @@
             border-radius: 30px;
             margin-top: 20px;
             margin-bottom: 0;
+            width: 120px;
+            margin-left: 100px;
+        }
+
+        #message1{
+            height: 20px;
+            width: 190px;
+        }
+        .message input{
+            margin-top: 0%;
+            margin-left: 0px;
         }
     </style>
 
     <div class="container">
         <form onsubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH WITH US</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <i class="fa fa-user" aria-hidden="true"></i>
+            <div class="form-control">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <i class="fa fa-user" aria-hidden="true"></i>
+</div>
 
-            <input type="email" id="nemail" placeholder="Email ID" required>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-
-            <input type="text" id="phone" placeholder="Phone No." required>
+<div class="form-control">
+    <input type="email" id="nemail" placeholder="Email ID" required>
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+</div>
+<div class="form-control">
+    <input type="text" id="phone" placeholder="Phone No." required>
             <i class="fa fa-phone" aria-hidden="true"></i>
+</div>  
 
-            <textarea id="message" rows="4" placeholder="How can we help you ? ">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            </textarea>
-            
-
-            <button type="submit">Send</button>
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-        </form>
+<div class="message">
+    <input type="text" id="message1" placeholder="How can we help you?
+    " required>
+</div>  
+<button type="submit" class="submit">Send</button>
     </div>
+</form>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
