@@ -101,7 +101,7 @@ input:focus ~ i {
 }
 .nav img{
     width: 100px;
-    height: 800px;
+    height: auto;
 }
 
 button.submit {
