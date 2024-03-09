@@ -118,21 +118,67 @@ input:focus ~ i {
     height: auto;
 }
 
-button.submit {
+.submit {
     color: #fff;
     padding: 14px 64px;
     margin: 32px auto;
-    
+    text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
     background-image: linear-gradient(to right, #a95eda, #2f9ed2);
     cursor: pointer;
     transition: opacity 0.4s;
+    border-radius: 20px;
+    width:max-content;
+    text-align: center;
 }
 
-button.submit:hover {
+.submit:hover {
     opacity: 0.9;
 }
+
+.dropbtn {
+  background-image: linear-gradient(to right, #a641ea, #0d90cd);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e8d7d5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #e1b3ab}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
 /* ----  Responsiveness   ----  */
 @media (max-width: 780px) {
@@ -153,7 +199,7 @@ button.submit:hover {
 </nav>
 
     <section class="side">
-        <img src="worker.jpg" alt="">
+        <img src="tasks.png" alt="">
     </section>
 
     <section class="main">
@@ -169,22 +215,73 @@ button.submit:hover {
                 <div class="form-control">
                     <input type="text" placeholder="Enter your city">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i id="tickIcon" class="fa fa-check" aria-hidden="true" style="display: none;"></i>
+    <span id="cityText" style="display: none;">City entered!</span>
                 </div>
-                <div class="form-control">
+                <div class="form-control street-colony-div" style="display: none;">
                     <input type="street" placeholder="Enter your street/colony">
                     <i class="fa fa-street-view" aria-hidden="true"></i>
+                </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Opt for your task</button>
+                        <div class="dropdown-content">
+                          <a href="cleaning.html">Cleaning</a>
+                          <a href="car-repairs.html">Car Repairs</a>
+                          <a href="gardening.html">Gardening</a>
+                          <a href="carpentry.html">Carpentry</a>
+                          <a href="cooking.html">Cooking</a>
+                          <a href="painting.html">Painting</a>
+                          <a href="plumbing.html">Plumbing</a>
+                          <a href="electrical.html">Electrical</a>
+                          <a href="car-wash.html">Car Wash</a>
+                          <a href="event.html">Event Planning</a>
+                          <a href="pest-control.jpeg">Pest Control</a>
+                        </div>
+                      </div>
                     
-                </div>
-                <div class="form-control">
-                    <input type="task" placeholder="Describe your task">
-                    <i class="fa fa-tasks" aria-hidden="true"></i>
-                </div>
+                
+ 
                 <h1 style="text-align: center;">INR 500 per hour</h1>
 
-                <button class="submit">Get Started</button>
+                <a href="index.html" class="submit">Get Started</a>
             </form>
         </div>
     </section>
-    
+    <script>// Predefined list of allowed cities
+        const allowedCities = ['Ludhiana','ludhiana', 'Mohali','mohali', 'Rajpura','rajpura', 'Patiala','patiala', 'Sangrur','sangrur', 'Sirhind','sirhind', 'Bathinda','bathinda', 'Amritsar','amritsar', 'Mansa','mansa','Jalandhar','jalandhar','Moga','moga', 'Khanna','khanna', 'Anandpur Sahib','anandpur sahib', 'Malerkotla','malerkotla'];
+        
+        // Get references to the input field and elements to show/hide
+        const cityInput = document.querySelector('input[type="text"]');
+        const tickIcon = document.getElementById('tickIcon');
+        const cityText = document.getElementById('cityText');
+        const streetColonyInput = document.querySelector('input[type="street"]');
+        const streetColonyDiv = document.querySelector('.street-colony-div');
+        
+        // Add event listener to input field
+        cityInput.addEventListener('input', function() {
+            // Check if the entered city is in the list of allowed cities
+            const enteredCity = cityInput.value.trim();
+            if (allowedCities.includes(enteredCity)) {
+                // Show tick icon and text
+                tickIcon.style.display = 'inline';
+                tickIcon.classList.add('fa-check');
+                tickIcon.classList.remove('fa-map-marker');
+                cityText.textContent = 'Indeed, we serve your location!';
+                cityText.style.display = 'inline';
+                // Show street/colony input field
+                streetColonyDiv.style.display = 'block';
+            } else {
+                // Hide tick icon and text
+                tickIcon.style.display = 'inline';
+                tickIcon.classList.remove('fa-check');
+                tickIcon.classList.add('fa-map-marker');
+                cityText.textContent = 'Unfortunately, we are unable to service your location.';
+                cityText.style.display = 'inline';
+                // Hide street/colony input field
+                streetColonyDiv.style.display = 'none';
+            }
+        });
+        
+    </script>
 </body>
 </html>
