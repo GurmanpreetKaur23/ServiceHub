@@ -12,7 +12,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: url(aesthetic.jpg);
-    background-size: cover;
 }
 
 section {
@@ -26,7 +25,7 @@ section {
     border-radius: 10px;
     width: 100%;
     max-width: 100%;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .login-container {
@@ -100,9 +99,8 @@ input ~ i {
 input:focus ~ i {
     color: #843bc7;
 }
-
 .nav img{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
