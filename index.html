@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ServiceHub</title>
+    <!-- include external css file -->
     <link rel="stylesheet" href="style.css">
+    <!-- include fontawesome file for special icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-d5YxOZrwN+XRSW3D4lmmRoj9t77GJW6rKuuC9hj9klL1vMsD+2IgSdCGfzgxgVX3CGoeEsbtiE7axgZaCJVkQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-
 <!-- nav bar -->
-<!-- guntas -->
-<header>
-  <div class="header-content">
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#signup">Sign up</a></li>
-        <li><a href="#login">Log in</a></li>
-        <button type="b">become a provider</button>
+<!-- guntas , gurdeep , gurman-->
 
-        
+<!-- guntas -->
+<!-- nav bar - header -->
+<header>
+  <div class="navbar">
+    <nav>
+      <img src="download1.png" alt="logo"> <!-- Adding logo image -->
+      <h1 class="servicehub-title">ServiceHub</h1> <!-- Main Title -->
+      <ul>
+        <li><a href="#services" class="nav-a">Services</a></li> 
+        <li><a href="#signup" class="nav-a">Sign up</a></li>
+        <li><a href="/login.html" class="nav-a">Log in</a></li>
       </ul>
+      <a href="Provider.html" class="btn">Become A Provider<a> <!-- To redirect to tasker file--> 
     </nav>
   </div>
-  <h1 class="servicehub-title">ServiceHub</h1>
- 
 </header>
+
+<!-- search bar - main-->
 <main>
-  <section class="hero">
-    <h1>Book trusted help for home tasks</h1>
-  </section>
-  <div class="search-bar">
-    <input type="text" placeholder="What do you need help with?">
-    <button type="button">Q</button>
+  <div class="back">
+    <section class="hero">
+      <h1>Book trusted help for home tasks</h1>
+    </section>
+  
+    <div class="search-bar">
+      <div class="entryarea">
+        <input type="text" required />
+        <div class="labelline">What do you need help with?</div>
+      </div>
+      <div class="search-button">
+        <button type="button"><img src="search.jpg"></button> <!-- search button -->
+      </div>
+    </div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Assembly</a></li>
-      <li><a href="#">Mounting</a></li>
-      <li><a href="#">Moving</a></li>
-      <li><a href="#">Cleaning</a></li>
-      <li><a href="#">Outdoor Help</a></li>
-      <li><a href="#">Home Repairs</a></li>
-      <li><a href="#">Painting</a></li>
-      <li><a href="#">Trending</a></li>
-    </ul>
-  </nav>
+  <div class="empty"></div>
 </main>
 
 <!-- services -->
 <!-- guntas -->
+
+<!-- providing services and a brief -->
 <div class="house-services">
   <a class="service-item">
     <img src="cleaning.png" alt="Cleaning">
@@ -113,34 +117,25 @@
 <!-- customer satisfaction -->
 <!-- gunjan -->
 <div class="container">
-  <h1>Your satisfaction, guaranteed</h1>
-
-  <!-- Wrap the headings in a div -->
+  <h1>Your satisfaction, guaranteed</h1> <!-- HEADING OF DIV -->
   <div class="headings">
-      <h2 id="happiness-pledge">Happiness Pledge <p style="color:#3A522A; font-size: small;">
+      <h2 id="happiness-pledge">Happiness Pledge <p style="color:#3A522A; font-size: small;">  <!--inline css-->
           If you're not satisfied, we'll work to make it right.
       </p></h2>
-      <h2 id="vetted-taskers">Vetted Taskers <p style="color:#3A522A; font-size: small;">
+      <h2 id="vetted-taskers">Vetted Taskers <p style="color:#3A522A; font-size: small;">  <!--inline css-->
           Taskers are always background checked before joining the platform.
-      </p></h2>
-      <h2 id="dedicated-support">Dedicated Support  <p style="color: #3A522A; font-size: small;">
+      </p></h2> 
+      <h2 id="dedicated-support">Dedicated Support  <p style="color: #3A522A; font-size: small;">  <!--inline css-->
           Friendly service when you need us - every day of the week.
       </p></h2>
   </div>
-
-  <!-- Add a footer with links to your support and contact pages -->
-  <!-- <footer>
-      <p>
-          <a href="/support">Support</a> | <a href="/contact">Contact</a>
-      </p>
-  </footer> -->
 </div>
 
     <!-- How it works -->
     <!-- gurman -->
     <div class="working">
         <div class="bg">
-            <div class="picture"><img alt="Image of lady booking a task on ServiceHub" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent;border-radius:8px" sizes="100vw" srcset="https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=640&amp;q=75&amp;fm=webp 640w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=750&amp;q=75&amp;fm=webp 750w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=828&amp;q=75&amp;fm=webp 828w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=1080&amp;q=75&amp;fm=webp 1080w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=1200&amp;q=75&amp;fm=webp 1200w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=1920&amp;q=75&amp;fm=webp 1920w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=2048&amp;q=75&amp;fm=webp 2048w, https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=3840&amp;q=75&amp;fm=webp 3840w" src="https://images.ctfassets.net/vwt5n1ljn95x/68OY5vAHQdG6blVvXM1WT7/5f45c9eda06d29820a9836a11232ef16/how_it_works_pic_updated.jpg?w=3840&amp;q=75&amp;fm=webp"></div>
+            <div class="picture"><img  src="how.jpg" alt="Image of lady booking a task on ServiceHub"></div>
           
             <div id="how-it-works">
                 <h2>How it works</h2>
@@ -168,13 +163,13 @@
   <h2>Get Help Today</h2>
 </div>
 <div class="serve">
-  <a href="\tasks.html" style="--clr:#522522"><span>Cleaning</span></a>
-  <a href="\tasks.html" style="--clr:#522522"><span>Plumbing Help</span></a>
-  <a href="\tasks.html" style="--clr:#522522"><span>Gardening Services</span></a>
-  <a href="\tasks.html" style="--clr:#522522"><span>Woodworking services</span></a>
-  <a href="\tasks.html" style="--clr:#522522"><span>Electrical repairs</span></a>
-  <!-- <a href="\tasks.html" style="--clr:#522522"><span>Mobile car wash and detailing services</span></a> -->
-  <a href="\tasks.html" style="--clr:#522522"><span>Pest removal and prevention services</span></a>
+  <a href="\tasks.html" style="--clr:#522522">Cleaning</a>
+  <a href="\tasks.html" style="--clr:#522522">Plumbing Help</a>
+  <a href="\tasks.html" style="--clr:#522522">Gardening Services</a>
+  <a href="\tasks.html" style="--clr:#522522">Woodworking services</a>
+  <a href="\tasks.html" style="--clr:#522522">Electrical repairs</a>
+  <a href="\tasks.html" style="--clr:#522522">Mobile car wash and detailing services</a>
+  <a href="\tasks.html" style="--clr:#522522">Pest removal and prevention services</a>
 </div>
 
 
@@ -193,7 +188,7 @@
     </div>
     <div class="person">
       <img src="gunjan.jpg" alt="Gunjan">
-      <div class="name">Gunjan Kohli</div>
+      <div class="name">Gunjan</div>
       <div class="social-icons">
         <a href="https://www.instagram.com/gunjankohli.30" target="_blank" style="background-image: url('instagram_logo.png')"></a>
         <a href="https://www.linkedin.com/in/gunjan-kohli-ab055b281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="background-image: url('linkedin_logo.png')"></a>
@@ -211,7 +206,7 @@
       <img src="gurdeep.jpg" alt="Gurdeep">
       <div class="name">Gurdeep Singh</div>
       <div class="social-icons">
-        <a href="https://www.instagram.com/_saini03_" target="_blank" style="background-image: url('instagram_logo.png')"></a>
+        <a href="https://www.instagram.com/saini03" target="_blank" style="background-image: url('instagram_logo.png')"></a>
         <a href="https://www.linkedin.com/in/gurdeep-singh-b945b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="background-image: url('linkedin_logo.png')"></a>
       </div>
     </div>
