@@ -28,7 +28,8 @@
   background-color: hsl(0,0%,50%);
   padding:10px 15px;
   margin: 10px;
-  margin-left: 700px;
+  border-radius: 10px;
+  margin-left: 560px;
   display: flex;
   justify-content: center;
 }
@@ -37,6 +38,7 @@
   color: white;
   text-decoration: none;
   padding: 20px;
+  border-radius: 10px;
   display: block;
   text-align: center;
   align-items: center;
@@ -44,51 +46,84 @@
   height: max-content;
 }
 
+.servicehub-title {
+  font-size: large;
+  font-family: Manrope;
+}
+.servicehub-slogan {
+  font-size: small;
+  font-family: Homemade Apple;
+}
 .nav-a:hover {
   background-color: #514d52;
   transition: 0.5s ease-in;
 }
-
+.nav-a:not(:hover){
+  background-color:transparent;
+  transition: 0.7s ease;
+}
+#btn{
+  margin-left: 5px;
+  height: 58px;
+  margin-top: auto;
+  width:180px
+}
 .btn{
-  border: 1px solid #514d52;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "montserrat";
-  cursor: pointer;
-  margin: 10px;
-  height: 60px;
-  transition: 0.8s;
+  width: 185px;
+  height: 50px;
+  background: #808080;
   position: relative;
-  overflow: hidden;
-}
-.btn1,.btn2{
-  color: #3498db;
-}
-
-.btn1:hover{
-  color: #fff;
+  display:flex;
+  border-radius: 10px;
+  margin: 3px auto auto 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.btn::before{
+.btn:before{
   content: "";
   position: absolute;
   left: 0;
-  width: 100%;
-  height: 0%;
-  background: #3498db;
-  z-index: -1;
-  transition: 0.8s;
-}
-.btn1::before{
   top: 0;
-  border-radius: 0 0 50% 50%;
+  width: 0;
+  height: 0;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  animation: border-top-right 3s infinite alternate;
+}
+.btn:hover{
+  background:  #514d52;
+  transition: 0.5s ease-in;
+}
+.btn:not(:hover){
+  background:  #808080;
+  transition: 0.5s ease;
+}
+.btn:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  animation: border-bottom-left 3s infinite alternate;
+}
+@keyframes border-top-right {
+  0% {width: 0px; height: 0px;}
+  50% {width: 185px;height: 0px;}
+  100% {width: 185px;height: 50px;}
+  
 }
 
-.btn1:hover::before{
-  height: 180%;
+@keyframes border-bottom-left {
+  0% {width: 0px; height: 0px;}
+  50% {width: 185px;height: 0px;}
+  100% {width: 185px;height: 50px;}
+  
 }
-
 .hero{
   display: flex;
   align-items: center;
@@ -238,6 +273,7 @@ nav a:hover {
   nav li {
     margin-right: 30px;
   }
+  
 }
 
 body {
@@ -355,11 +391,21 @@ p {
 .picture img{
   position:absolute;
   top: 0%;
-  left: 20%;
-  width: 70%;
+  left: 45%;
+  border-radius: 8px;
+  /* width: 70%; */
   height: 100%;
-  opacity: 100;
+  opacity: 0.7;
 } 
+
+.picture img:hover {
+  opacity: 100;
+  transition: 0.7s ease;
+}
+.picture img:not(:hover) {
+  opacity:  0.7;
+  transition: 0.7s ease;
+}
 
 #how-it-works {
   width: 30%;
@@ -369,7 +415,7 @@ p {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  right:30% ;
+  right:15% ;
   position: relative;
   margin-top: -50px;
 }
@@ -377,6 +423,8 @@ p {
 .bg {
   position: relative;
   overflow: hidden;
+  align-items: center;
+  margin-left: 60px;
 }
 
 #how-it-works h2 {
@@ -463,7 +511,7 @@ p {
 }
 
 /* Help section */
-.help {
+#help {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -471,7 +519,7 @@ p {
   background-color: #d4d4d4 ;
 }
 
-.help h2 {
+#help h2 {
   color: rgb(94, 30, 20);
   font-family: Manrope;
   text-align: center;
@@ -639,7 +687,7 @@ html {
     justify-content: center;
   }
 
-  .help h2 {
+  #help h2 {
     font-size: 24px;
   }
 
@@ -664,7 +712,7 @@ html {
     align-items: center;
   }
 
-  .help h2 {
+  #help h2 {
     font-size: 20px;
   }
 
@@ -694,6 +742,7 @@ html {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #B9A4A4;
 }
 
 #connect span {
