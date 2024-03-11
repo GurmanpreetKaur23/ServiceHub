@@ -7,7 +7,7 @@
     <!-- include external css file -->
     <link rel="stylesheet" href="style.css">
     <!-- include fontawesome file for special icons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-d5YxOZrwN+XRSW3D4lmmRoj9t77GJW6rKuuC9hj9klL1vMsD+2IgSdCGfzgxgVX3CGoeEsbtiE7axgZaCJVkQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 
@@ -20,13 +20,15 @@
   <div class="navbar">
     <nav>
       <img src="download1.png" alt="logo"> <!-- Adding logo image -->
-      <h1 class="servicehub-title">ServiceHub</h1> <!-- Main Title -->
+      <img src="slogan3.png" alt="slogan">
       <ul>
-        <li><a href="#services" class="nav-a">Services</a></li> 
+        <li><a href="#help" class="nav-a">Services</a></li> 
         <li><a href="#signup" class="nav-a">Sign up</a></li>
-        <li><a href="/login.html" class="nav-a">Log in</a></li>
+        <li><a href="login.html" class="nav-a">Log in</a></li>
       </ul>
-      <a href="Provider.html" class="btn">Become A Provider<a> <!-- To redirect to tasker file--> 
+      <ul id="btn">
+       <li><a class="btn" href="Provider.html" style="text-decoration: none;color: #FFFFFF;">Join Us</a></li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -159,7 +161,7 @@
 <!-- get help -->
 <!-- gurman -->
 
-<div class="help">
+<div id="help">
   <h2>Get Help Today</h2>
 </div>
 <div class="serve">
